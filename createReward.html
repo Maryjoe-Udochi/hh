@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kids Reward App</title>
+        <link rel="stylesheet" href="styles/foundation.css">
+        <link rel="stylesheet" href="styles/app.css">
+        <link rel="icon" href="img/favicon_2.png" type="image/x-icon" />
+        <!--Google font Inter-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <!--Google icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+    
+       <!--Header for logo, menus here-->
+       <header class="grid-container">
+            <section class="grid-x header">
+
+                <div class="cell large-2 medium-2 small-2"> <!--Logo-->
+                    <a href="#"><img src="img/LogoImg.png" alt="habit haven logo"></a>
+                </div> 
+
+                <div class="cell large-6 medium-6 small-2"><!--Primary menu-->
+                    <nav aria-label="Primary menu for home, task and reward">
+                        <ul>
+                          <li><a href="childCreated.html">Home</a></li>
+                          <li><a href="addTask.html">Task</a></li>
+                          <li><a href="#" id="navActive">Reward</a></li>
+                        </ul>
+                      </nav>
+                </div> 
+
+                <div class="cell large-4 medium-4 small-8 secondaryNav">
+                    <nav aria-label="Secondary menu for account, notification and settings">
+                        <ul>
+                          <a href="#"><i class="material-icons md-36">menu</i></a>
+                          <a href="#"><i class="material-icons md-36">notifications</i></a>
+                          <a href="#"><i class="material-icons md-36">person</i></a>
+                        </ul>
+                      </nav>
+                </div> <!--secondary menu-->
+            </section>
+       </header>
+
+        <!--Body-->
+        <main>
+            <section class="grid-container"> <!--Main container-->
+                <div id="addChildHeader"> <!--heading-->
+                    <h1>Create Reward</h1>
+                </div>
+
+                <form>
+                    <div class="grid-container"> <!--Add task container-->
+                        <div class="grid-x"><!--form cotainer-->
+                            <div class="cell large-12" id="addTaskForm">
+                                <label for="task1"> Enter reward name </label>
+
+                                <div class="grid-x" id="fileuploadmargin"> <!--Reward textfiled and Upload photo-->
+                                    <div class="cell large-11 medium-8 small-8"> <!--Reward 1 textfield-->
+                                        <input type="text" id="task1" placeholder="Enter name the reward name">
+                                    </div>
+                                    <div class="cell large-1 medium-1 small-1 uploadFile"><!--Upload reward photo-->
+                                        <label>
+                                            <input type="file" id="file-upload" hidden>
+                                            <img src="img/fileUpload.png" alt="Upload Icon">
+                                        </label>
+                                     </div>
+                                </div>
+
+                                <div class="grid-x" id="fileuploadmargin"> <!--Reward textfiled and Upload photo-->
+                                    <div class="cell large-11 medium-8 small-8"> <!--Reward 2 textfield-->
+                                        <input type="text" id="task1" placeholder="Enter name the reward name">
+                                    </div>
+                                    <div class="cell large-1 medium-1 small-1 uploadFile"><!--Upload reward photo-->
+                                        <label> 
+                                            <input type="file" id="file-upload" hidden>
+                                            <img src="img/fileUpload.png" alt="Upload Icon">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div id="centerButtonCreateChild" class="grid-x"> <!--Button-->
+                                    <div class="secondaryButton cell large-3">
+                                        <a href="#"><i class="material-icons md-24">add</i></a>
+                                        <a href="#">Add another Reward</a>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+
+                        <div id="rewarddiv">
+                             <!--Assign reward to task-->
+                            <label for="tasksList">Assign reward to task:</label>
+                            <input type="text" list="tasks" name="tasks" placeholder="Choose Task..">
+                            <datalist id="tasks">
+                                <option value="House Chores" id="houseChores">Wash the dishes and tidy your room</option>
+                                <option value="House Chores">Sweep the kitchen</option>
+                                <option value="Creativity and Imagination">Draw and paint superman</option>
+                                <option value="Kindness and Empathy">Help Junior with his homework</option>
+                                <option value="Personal Hygiene">Brush you teeth tonight</option>
+                            </datalist>
+                        </div>
+                       
+
+
+                        <div class="grid-x grid-margin-x uploadFile"> <!--Assign task begins here-->
+                            <div class="cell" id="uploadPush"><p>Assign task to:</p></div>
+
+                                <div class="cell large-2 medium-2 small-2"> <!--choose avatar Monkey-->
+                                    <div class="radio-wrapper">
+                                        <input type="radio" id="radio-1" name="radio-group" value="option-1">
+                                        <label for="radio-1"> 
+                                          <img src="img/monkey.png" alt="Option 1 Image" class="radio-image">
+                                          <br>Jesse
+                                          <span class="check-mark"></span>
+                                        </label>
+                                    </div>
+                                 </div>
+
+                                <div class="cell large-2 medium-2 small-2"> <!--choose avatar Alien-->
+                                    <div class="radio-wrapper">
+                                        <input type="radio" id="radio-2" name="radio-group" value="option-2">
+                                        <label for="radio-2"> 
+                                          <img src="img/alien.png" alt="Option 1 Image" class="radio-image">
+                                          <br>Laura
+                                          <span class="check-mark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="cell large-2 medium-2 small-2"> <!--choose avatar Robot-->
+                                    <div class="radio-wrapper">
+                                        <input type="radio" id="radio-3" name="radio-group" value="option-3">
+                                        <label for="radio-3"> 
+                                          <img src="img/robot.png" alt="Option 1 Image" class="radio-image">
+                                          <br>Jackson
+                                          <span class="check-mark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="cell large-2 medium-2 small-2"> <!--choose avatar Cat-->
+                                    <div class="radio-wrapper">
+                                        <input type="radio" id="radio-4" name="radio-group" value="option-4">
+                                        <label for="radio-4"> 
+                                          <img src="img/cat.png" alt="Option 1 Image" class="radio-image">
+                                          <br>Mary
+                                          <span class="check-mark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-wrapper">
+                                    <input type="radio" id="radio-5" name="radio-group" value="option-5">
+                                    <label for="radio-5"> 
+                                      <img src="img/Alienz.png" alt="Option 1 Image" class="radio-image">
+                                      <br>Robert
+                                      <span class="check-mark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="grid-container" id="marginTop2">
+                        <!--button-->
+                        <div id="centerButtonCreateChild" class="grid-x grid-margin-x">
+                            <div class="secondaryButton cell large-4 large-offset-4">
+                                <a href="childCreated.html">Save</a>
+                            </div>
+                        </div>
+                    </section> 
+
+                </form>
+            </section>
+        </main>
+
+
+        <!--Footer-->
+        <footer class="grid-container footer">
+            <section class="grid-x">
+                <nav class="cell large-5 medium-5 small-6">
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Program Policies</a></li>
+                    </ul>
+                </nav>
+
+                <div class="cell large-7 medium-7 small-6 footerTrademark">
+                    <p>Kids Reward App @ 2024</p>
+                </div>
+            </section>
+        </footer>
+        
+          
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

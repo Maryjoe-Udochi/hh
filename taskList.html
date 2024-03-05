@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kids Reward App</title>
+        <link rel="stylesheet" href="styles/foundation.css">
+        <link rel="stylesheet" href="styles/app.css">
+        <link rel="icon" href="img/favicon_2.png" type="image/x-icon" />
+        <!--Google font Inter-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <!--Google icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+    
+       <!--Header for logo, menus here-->
+       <header class="grid-container">
+            <section class="grid-x header">
+
+                <div class="cell large-2 medium-2 small-2"> <!--Logo-->
+                    <a href="#"><img src="img/LogoImg.png" alt="habit haven logo"></a>
+                </div> 
+
+                <div class="cell large-6 medium-6 small-2"><!--Primary menu-->
+                    <nav aria-label="Primary menu for home, task and reward">
+                        <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Task</a></li>
+                          <li><a href="#">Reward</a></li>
+                        </ul>
+                      </nav>
+                </div> 
+
+                <div class="cell large-4 medium-4 small-8 secondaryNav">
+                    <nav aria-label="Secondary menu for account, notification and settings">
+                        <ul>
+                          <a href="#"><i class="material-icons md-36">menu</menu></i></a>
+                          <a href="#"><i class="material-icons md-36">notifications</menu></i></a>
+                          <a href="#"><i class="material-icons md-36">person</menu></i></a>
+                        </ul>
+                      </nav>
+                </div> <!--secondary menu-->
+            </section>
+       </header>
+
+        <!--Body-->
+        <main>
+            <section class="grid-container">
+                <div id="addChildHeader">
+                    <h1>Task Lists</h1>
+                </div>
+            </section>
+
+           <form>
+                <!--Task List checkboxes-->
+                <div class="grid-container" id="marginTop">
+
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell large-10 medium-9 small-8" id="taskcreatedlist">
+                            <p>Jesse's task list</p>
+                        </div>
+                        <div class="cell large-2 medium-3 small-4" id="editButton">
+                            <a href="#">Edit Task</a>
+                            <a href="#"><i class="material-icons md-24">edit</i></a>
+                        </div>
+                    </div>
+
+                    <div class="grid-x grid-margin-x containerCheckbox">
+                       <div class="cell large-10 medium-9 small-8">
+                            <label class="">Help Junior with his homework
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                            
+                        <div class="tag cell large-2 medium-3 small-4">
+                            <p>Kindness...</p>
+                            <img src="img/Iconsmall1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="grid-x grid-margin-x containerCheckbox">
+                        <div class="cell large-10 medium-9 small-8">
+                             <label class="">Give your brother 5 compliments today
+                                 <input type="checkbox" checked="checked">
+                                 <span class="checkmark"></span>
+                             </label>
+                         </div>
+                             
+                         <div class="tag cell large-2 medium-3 small-4">
+                             <p>Kindness...</p>
+                             <img src="img/Iconsmall1.png" alt="">
+                         </div>
+                     </div>
+
+                     <div class="grid-x grid-margin-x containerCheckbox">
+                        <div class="cell large-10 medium-9 small-8">
+                             <label class="">Offer to join daddy with wash his clothes
+                                 <input type="checkbox" checked="checked">
+                                 <span class="checkmark"></span>
+                             </label>
+                         </div>
+                             
+                         <div class="tag cell large-2 medium-3 small-4">
+                             <p>Kindness...</p>
+                             <img src="img/Iconsmall1.png" alt="">
+                         </div>
+                     </div>
+
+                     <div class="grid-x grid-margin-x containerCheckbox">
+                        <div class="cell large-10 medium-9 small-8">
+                             <label class="">Write down 10 things you are grateful for
+                                 <input type="checkbox" checked="checked">
+                                 <span class="checkmark"></span>
+                             </label>
+                         </div>
+                             
+                         <div class="tag cell large-2 medium-3 small-4">
+                             <p>Kindness...</p>
+                             <img src="img/Iconsmall1.png" alt="">
+                         </div>
+                     </div>
+                </div>
+
+                <!--button-->
+                <!--<section>
+                    <div id="centerButtonCreateChild" class="grid-x">
+                        <div class="secondaryButton cell large-1 medium-3 small-3">
+                            <a href="addChild.html">Save</a>
+                        </div>
+                    </div>
+                </section>-->
+
+                <!--button-->
+                <div class="grid-container" id="marginBottom">
+                    <div class="grid-x grid-margin-x">
+                        <div class="secondaryButton cell large-2 medium-3 small-3 large-offset-5">
+                            <a href="addChild.html">Save</a>
+                        </div>
+                    </div>
+                </div>
+           </form>
+        </main>
+
+        <!--Footer-->
+        <footer class="grid-container footer">
+            <section class="grid-x">
+                <nav class="cell large-5 medium-5 small-6">
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Program Policies</a></li>
+                    </ul>
+                </nav>
+
+                <div class="cell large-7 medium-7 small-6 footerTrademark">
+                    <p>Kids Reward App @ 2024</p>
+                </div>
+            </section>
+        </footer>
+        
+          
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

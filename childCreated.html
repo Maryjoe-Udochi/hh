@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kids Reward App</title>
+        <link rel="stylesheet" href="styles/foundation.css">
+        <link rel="stylesheet" href="styles/app.css">
+        <link rel="icon" href="img/favicon_2.png" type="image/x-icon" />
+        <!--Google font Inter-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <!--Google icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+    
+       <!--Header for logo, menus here-->
+       <header class="grid-container">
+            <section class="grid-x header">
+
+                <div class="cell large-2 medium-2 small-2"> <!--Logo-->
+                    <a href="#"><img src="img/LogoImg.png" alt="habit haven logo"></a>
+                </div> 
+
+                <div class="cell large-6 medium-6 small-2"><!--Primary menu-->
+                    <nav aria-label="Primary menu for home, task and reward">
+                        <ul>
+                          <li><a href="childCreated.html" id="navActive">Home</a></li>
+                          <li><a href="addTask.html">Task</a></li>
+                          <li><a href="createReward.html">Reward</a></li>
+                        </ul>
+                      </nav>
+                </div> 
+
+                <div class="cell large-4 medium-4 small-8 secondaryNav">
+                    <nav aria-label="Secondary menu for account, notification and settings">
+                        <ul>
+                          <!--<li><a href="#"><img src="img/secMenu/menu.png" alt="settings"></a></li>
+                          <li><a href="#">Task</a></li>
+                          <li><a href="#">Reward</a></li>-->
+                          <a href="#"><i class="material-icons md-36">menu</i></a>
+                          <a href="#"><i class="material-icons md-36">notifications</i></a>
+                          <a href="#"><i class="material-icons md-36">person</i></a>
+                        </ul>
+                      </nav>
+                </div> <!--secondary menu-->
+            </section>
+       </header>
+
+        <!--Body-->
+        <main>
+            <section class="grid-container">
+                <div class="grid-x">
+                    
+                    <div class="cell large-12 medium-12 small-12"><!--display panel-->
+                        
+                       <div class="panel">
+                        <div>
+                            <div class="cell large-6 medium-6 small-6"><!--next-->
+                                <div id="createtaskbutton" class="grid-x">
+                                    <a href="addTask.html"><p>Create task</p></a>
+                                    <a href="addTask.html"><i class="material-icons md-24">add</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                            <div class="panelMessageIcon">
+                                <img src="img/error.png" alt="#"> <!--The alt is empty because it is a decorative image/icon-->
+                            </div>
+    
+                            <div id="panelMessage">
+                                <div class="panelMessageHeading">
+                                    <p>NO TASK CREATED</p>
+                                </div>
+                                <div class="panelMessageTextWarp">
+                                    <p>Create a tasks and assign a gift to your child.</p>
+                                </div>
+
+                                <div class="cell large-8" id="emptyProgressBar"> <!--Progress bar-->
+                                    <p> 0 / 0 <img src="img/gift.png" alt="" aria-hidden="true"> </p>
+                                </div>
+                                
+                            </div>
+                       </div> 
+                    </div>
+                </div>
+            </section>
+
+
+            
+            <section class="grid-container">
+                <div id="addChildHeader">
+                    <h1>Add a child</h1>
+                </div>
+            </section>
+
+            <!--Add Child Links-->
+            <section class="grid-container">
+                <div class="grid-x addChild"> <!--Child added-->
+                    <div class="cell large-5 medium-5 small-4">
+                        <div id="childCreated"> <!--background-->
+                            <div> <!--Choosen avatar-->
+                                <a href="#"> <img src="img/alien_choosen.png" alt="Jesse's avatar"></a> </a>
+                            </div>
+                            <div id="childCreatedName"> <!--Name and age-->
+                                <p>Jesse</p>
+                                <p style="font-size: 14px; color: #ACB7CD;">9 years</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell large-5 medium-5 small-4">
+                        <a href="#"><img src="img/addChild.png" alt="click to add child"></a>
+                    </div>
+                    <div class="cell large-2 medium-2 small-4">
+                        <a href="#"><img src="img/addChild.png" alt="click to add child"></a>
+                    </div>
+                </div>
+
+                <div id="centerButtonCreateChild">
+                    <div class="secondaryButton cell large-4">
+                        <a href="#"><i class="material-icons md-24">person_add</i></a>
+                        <a href="#">Add Child</a>
+                    </div>
+               </div>
+
+            </section>    
+        </main>
+
+        <!--Footer-->
+        <footer class="grid-container footer">
+            <section class="grid-x">
+                <nav class="cell large-5 medium-5 small-6">
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Program Policies</a></li>
+                    </ul>
+                </nav>
+
+                <div class="cell large-7 medium-7 small-6 footerTrademark">
+                    <p>Kids Reward App @ 2024</p>
+                </div>
+            </section>
+        </footer>
+        
+          
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

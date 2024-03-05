@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kids Reward App</title>
+        <link rel="stylesheet" href="styles/foundation.css">
+        <link rel="stylesheet" href="styles/app.css">
+        <link rel="icon" href="img/favicon_2.png" type="image/x-icon" />
+        <!--Google font Inter-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <!--Google icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+    
+       <!--Header for logo, menus here-->
+       <header class="grid-container">
+            <section class="grid-x header">
+
+                <div class="cell large-2 medium-2 small-2"> <!--Logo-->
+                    <a href="#"><img src="img/LogoImg.png" alt="habit haven logo"></a>
+                </div> 
+
+                <div class="cell large-6 medium-6 small-2"><!--Primary menu-->
+                    <nav aria-label="Primary menu for home, task and reward">
+                        <ul>
+                          <li><a href="childCreated.html">Home</a></li>
+                          <li><a href="#" id="navActive">Task</a></li>
+                          <li><a href="createReward.html">Reward</a></li>
+                        </ul>
+                      </nav>
+                </div> 
+
+                <div class="cell large-4 medium-4 small-8 secondaryNav">
+                    <nav aria-label="Secondary menu for account, notification and settings">
+                        <ul>
+                          <a href="#"><i class="material-icons md-36">menu</i></a>
+                          <a href="#"><i class="material-icons md-36">notifications</i></a>
+                          <a href="#"><i class="material-icons md-36">person</i></a>
+                        </ul>
+                      </nav>
+                </div> <!--secondary menu-->
+            </section>
+       </header>
+
+        <!--Body-->
+        <main>
+            <section class="grid-container"> <!--Main container-->
+                <div id="addChildHeader"> <!--heading-->
+                    <h1>Create Task</h1>
+                </div>
+
+                <form>
+                    <div id="marginBottom70"><!--Choose task category container-->
+                        <div id="pStyle"> <!--Select Categoty Heading-->
+                            <p>Choose a task category</p>
+                        </div>
+
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell large-2 medium-2 small-2"><!--House Hold chores option-->
+                                    <div id="taskCategory">
+                                        <input type="radio" id="option1" name="myRadioGroup" value="option1">
+                                        <label for="option1">
+                                            <img src="img/hhchores.png" alt="house hold chores">
+                                            <p>House hold <br> chores</p>
+                                        </label>
+                                    </div>
+                                </div>
+        
+                                <div class="cell large-2 medium-2 small-2"><!--Creative and Imagination option-->
+                                    <div id="taskCategory">
+                                        <input type="radio" id="option2" name="myRadioGroup" value="option2">
+                                        <label for="option2">
+                                            <img src="img/creativity and imagination.png" alt="creativity and imagination">
+                                            <p>Creativity and <br> imagination</p>
+                                        </label>
+                                    </div>
+                                </div>
+        
+                                <div class="cell large-2 medium-2 small-2"><!--Kindness and Empathy-->
+                                    <div id="taskCategory">
+                                        <input type="radio" id="option3" name="myRadioGroup" value="option3">
+                                        <label for="option3">
+                                            <img src="img/empathy.png" alt="kindness and empathy">
+                                            <p>Kindness and <br> empathy</p>
+                                        </label>
+                                    </div>
+                                </div>
+        
+                                <div class="cell large-2 medium-2 small-2"><!--Personal care-->
+                                    <div id="taskCategory">
+                                        <input type="radio" id="option4" name="myRadioGroup" value="option4">
+                                        <label for="option4">
+                                            <img src="img/personal care.png" alt="kindness and empathy">
+                                            <p>Personal <br> care</p>
+                                        </label>
+                                    </div>
+                                </div>
+        
+                                <div class="cell large-2 medium-2 small-2"><!--Educational-->
+                                    <div id="taskCategory">
+                                        <input type="radio" id="option5" name="myRadioGroup" value="option5">
+                                        <label for="option5">
+                                            <img src="img/education.png" alt="kindness and empathy">
+                                            <p>Education <br> and science </p>
+                                        </label>
+                                    </div>
+                                </div>
+        
+                                <div class="cell large-2 medium-2 small-2"><!--Games-->
+                                    <div id="taskCategory">
+                                        <input type="radio" id="option6" name="myRadioGroup" value="option6">
+                                        <label for="option6">
+                                            <img src="img/sports.png" alt="kindness and empathy">
+                                            <p>Sports and<br> games</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-container"> <!--Add task container-->
+                        <div class="grid-x" id="marginBottom30">
+                            <div class="cell large-6 medium-6 small-6" id="addTask"><!--Heading-->
+                                <p>Add Task</p>
+                            </div>
+                            <div class="cell large-6 medium-6 small-6"><!--Header icon-->
+                                <div id="addTaskHeaderIcon"><!--icon-->
+                                    <!--<i class="material-icons md-24">favorite</i>-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-x"><!--form cotainer-->
+                            <div class="cell large-12" id="addTaskForm"><!--Task 1 textfield-->
+                                <label for="task1"> Task 1 </label>
+                                <input type="text" id="task1" placeholder="Enter name of task">
+
+                                <label for="task2"> Task 2 </label>
+                                <input type="text" id="task2" placeholder="Enter name of task">
+
+                                <label for="task3"> Task 3 </label>
+                                <input type="text" id="task3" placeholder="Enter name of task">
+
+                                <div id="centerButtonCreateChild" class="grid-x">
+                                    <div class="secondaryButton cell large-3">
+                                        <a href="#"><i class="material-icons md-24">add</i></a>
+                                        <a href="#">Add another task</a>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-x grid-margin-x uploadFile"> <!--Assign task begins here-->
+                            <div class="cell" id="uploadPush">
+                                <p>Assign task to:</p>
+                            </div>
+
+                            <div class="cell large-2 medium-2 small-2"> <!--choose avatar Monkey-->
+                                    <div class="radio-wrapper">
+                                        <input type="radio" id="radio-1" name="radio-group" value="option-1">
+                                        <label for="radio-1"> 
+                                          <img src="img/monkey.png" alt="Option 1 Image" class="radio-image">
+                                          <br>Jesse
+                                          <span class="check-mark"></span>
+                                        </label>
+                                    </div>
+                                 </div>
+
+                                <div class="cell large-2 medium-2 small-2"> <!--choose avatar Alien-->
+                                    <div class="radio-wrapper">
+                                        <input type="radio" id="radio-2" name="radio-group" value="option-2">
+                                        <label for="radio-2"> 
+                                          <img src="img/alien.png" alt="Option 1 Image" class="radio-image">
+                                          <br>Laura
+                                          <span class="check-mark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="cell large-2 medium-2 small-2"> <!--choose avatar Robot-->
+                                    <div class="radio-wrapper">
+                                        <input type="radio" id="radio-3" name="radio-group" value="option-3">
+                                        <label for="radio-3"> 
+                                          <img src="img/robot.png" alt="Option 1 Image" class="radio-image">
+                                          <br>Jackson
+                                          <span class="check-mark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="cell large-2 medium-2 small-2"> <!--choose avatar Cat-->
+                                    <div class="radio-wrapper">
+                                        <input type="radio" id="radio-4" name="radio-group" value="option-4">
+                                        <label for="radio-4"> 
+                                          <img src="img/cat.png" alt="Option 1 Image" class="radio-image">
+                                          <br>Mary
+                                          <span class="check-mark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-wrapper">
+                                    <input type="radio" id="radio-5" name="radio-group" value="option-5">
+                                    <label for="radio-5"> 
+                                      <img src="img/Alienz.png" alt="Option 1 Image" class="radio-image">
+                                      <br>Robert
+                                      <span class="check-mark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-x grid-margin-x buttonMarginTopBottom"> <!--Button-->
+                            <div class="secondaryButton cell large-4 medium-4 small-5">
+                                <a href="childCreated.html">Create reward later</a>
+                            </div>
+                            <div class="button cell large-8 medium-8 small-">  
+                                <a href="createReward.html">Save and create reward</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
+        </main>
+
+
+        <!--Footer-->
+        <footer class="grid-container footer">
+            <section class="grid-x">
+                <nav class="cell large-5 medium-5 small-6">
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Program Policies</a></li>
+                    </ul>
+                </nav>
+                <div class="cell large-7 medium-7 small-6 footerTrademark">
+                    <p>Kids Reward App @ 2024</p>
+                </div>
+            </section>
+        </footer>
+        
+          
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

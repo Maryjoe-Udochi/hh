@@ -1,0 +1,1106 @@
+/* This justifies content in a div to the center 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+*/
+
+
+/* Embedding google icons styling */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+
+/* ------------ HTML selector starts here ----------- */
+
+html{
+    scroll-behavior: smooth;
+} 
+
+body{
+    background-color: #131926;
+}
+
+h1{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    color: #d9e0f1;
+}
+
+p{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+    color: #F4F6FB;
+}
+
+label{
+    font-size: 16px;
+    color: #F4F6FB;
+    font-weight: 600;
+    margin: 10px 0px 10px 0px;
+}
+
+/* Input styling text start */
+input[type="text"]{ 
+    border-radius: 10px;
+    border: 2px solid #505A6E;
+    background: #0a0e16;
+    padding: 28px 24px;
+    color: #F4F6F2;
+} 
+input[type=text]:focus {
+    border: 3px solid #e1e1ff46;
+    background: #20293c;
+}
+input[type="text"]::placeholder{
+    color:#ADB8CC;
+}
+/* Input styling text end */
+
+
+/* Input styling email start */
+input[type="email"]{ 
+    border-radius: 10px;
+    border: 2px solid #505A6E;
+    background: #0a0e16;
+    padding: 28px 24px;
+    color: #F4F6F2;
+  }
+input[type=email]:focus {
+    border: 3px solid #e1e1ff46;
+    background: #20293c;
+  }
+input[type="email"]::placeholder{
+    color:#ADB8CC;
+  }
+/* Input styling email ends */
+
+
+/* Input styling password start */
+input[type="password"]{ 
+    border-radius:  10px;
+    border: 2px solid #505A6E;
+    background: #0a0e16;
+    padding: 28px 24px;
+  } 
+input[type=password]:focus {
+    border: 3px solid #e1e1ff46;
+    background: #20293c;
+  }
+input[type="password"]::placeholder{
+    color:#ADB8CC;
+  }
+/* Input styling password end */
+
+.select{
+    border-radius:  10px;
+    border: 2px solid #505A6E;
+    background-color: #0a0e16;
+    padding: 28px 24px;
+    color: #F4F6FB;
+    cursor: pointer;
+    height: 66px;
+
+    /*Removing the default styling
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    */
+    
+}
+.select:focus,
+.select:hover{
+    outline: none;
+    border: 3px solid #e1e1ff46;
+    background-color: #20293c;
+}
+
+/* Header starts */
+
+header{
+    background-color: #04070F;
+    border-radius: 5px;
+}
+
+
+  
+nav ul{
+    list-style-type: none;
+    padding:0;
+    text-align: center;
+}
+  
+nav li{ /* for the menu link */
+    display: inline;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+nav li a{
+    padding: 10px 8px;
+    text-decoration: none;
+    color: #F4F6FB;
+    border-radius: 2px;
+    font-size: 18px;
+  }
+  
+nav li a:hover{
+    background-color: #3C5B8D;
+    color: #F4F6FB;
+  }
+
+nav li a:active{
+    color: rgb(133, 176, 255);
+    font-weight: 700;
+}
+
+#navActive{
+    background-color: #3C5B8D;
+    color: #F4F6FB;
+  }
+
+/* Header ends */
+
+
+/* ------------ HTML ends starts here ----------- */
+
+#loginSignUp{
+margin-top: 10px;
+}
+#loginSignUp a{
+  font-weight: 600;
+  color: #65adfb;
+  
+}
+
+#formHeading{
+    padding-top: 150px;
+    width: 500px;
+    margin-right: 80px;
+ }
+
+#mainRight{
+    padding-top: 20px;
+ }
+
+#logo{
+    margin-bottom: 30px;  
+ }
+
+#logo img{
+    width: 100px;
+    height: auto;
+ }
+ 
+#signUp{
+   margin-bottom: 40px;
+ }
+#signUp p{
+    font-size: 16px;
+    color: #ADB8CC;
+ }
+
+
+ /* Primary Button styling start */
+ .button{
+    border-radius: 10px;
+    border: 2px solid #02218D;
+    background-color:#1448FF;
+    box-shadow: 5px 6px 0px 0px #02218D;
+    
+    margin-top: 20px;
+ }
+
+.button a{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 214.286% */
+    color:#F4F6FB;
+ }
+
+.button:active {
+    background-color: #1448FF;
+    box-shadow: 0 5px #02218D;
+    transform: translateY(4px);
+  }
+
+.button:hover{
+    background-color: #3361FF;
+  }
+  /* Primary Button styling end */
+
+
+   /* Secondary Button styling start */
+ .secondaryButton{
+    border-radius: 10px;
+    border: 2px solid #8A95AE;
+    background-color:#131926;
+    box-shadow: 5px 6px 0px 0px #8A95AE;
+    padding: 0.85em 1em;
+    text-align: center;
+    margin-top: 20px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.secondaryButton a{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 214.286% */
+    color:#F4F6FB;
+ }
+
+ .secondaryButton i{
+    margin-right: 10px;
+ }
+
+.secondaryButton:active {
+    background-color: #131926;
+    box-shadow: 0 5px #8A95AE;
+    transform: translateY(4px);
+  }
+
+.secondaryButton:hover{
+    background-color: #1F283A;
+  }
+  /* Primary Button styling end */
+
+
+   /* header styling starts */
+.header{
+    padding-top:30px;
+    padding-bottom: 10px;
+    margin-bottom: 64px;
+
+  }
+.header img{
+    width: 100px;;
+    margin-left: 23px;
+  }
+
+  .secondaryNav{
+    
+  }
+.secondaryNav nav{
+    margin-left: 31px;
+    float: right;
+  }
+    
+.secondaryNav nav ul{
+      list-style-type: none;
+      padding:0;
+      text-align: center;
+    }
+    
+.secondaryNav ul a{ /* for the menu link */
+      display: inline;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+    
+.secondaryNav nav a{
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 2px;
+    }
+
+.secondaryNav nav i{
+        color:#F4F6FB;
+        padding:5px;
+        border-radius: 100%;
+
+    }
+
+.secondaryNav nav i:hover{
+        background-color: #3C5B8D;
+        color: #F4F6FB;
+    }
+
+       /* header styling ends */
+
+.panel{
+        border-radius: 5px;
+        border: 4px solid #141F37;
+        background-color:#04070F;
+        padding:24px 34px;
+        margin-bottom: 60px;
+    }
+
+.panelMessageHeading p{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px; /* 187.5% */
+        color: #ADB8CC;
+    }
+.panelMessageTextWarp{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px; /* 187.5% */
+        color: #F4F6FB;
+    }
+
+.panelMessageIcon{
+        float: left;
+    }
+
+.panelMessageIcon img{
+        width: 30px;
+        height: auto;
+    }
+
+#panelMessage{
+        margin-left: 50px;
+        
+}
+ 
+#addChildHeader{
+    margin-bottom: 40px;
+}
+#addChildHeader h1{
+    font-size: 24px;
+}
+.addChild{
+        margin-bottom: 260px;
+}
+.addChild img{
+        width: 140px;
+        height: auto;
+}
+
+.footer{
+        padding-top:30px;
+        padding-bottom: 10px;
+        background-color: #04070F;
+}
+.footer nav ul{
+    text-align: left;
+}
+.footer nav li{
+    padding: 1px;
+}
+.footer li{
+    padding-right: 15px;
+}
+.footer ul{
+    margin-left: 1px;
+}
+.footer nav ul li a{
+        font-size: 14px;
+}
+.footerTrademark{
+        padding-right: 10px;
+}
+.footerTrademark p{
+        float:right;
+}
+
+/**Tertiary navigation: back and next**/
+
+#back{
+    border-radius: 10px;
+    border: 2px solid #31363f;
+    padding: 16px 15px 9px 12px;
+    width: 120px;  
+}
+#back a i{
+  color: #F4F6F2;
+}
+
+#back p{
+  float: right;
+  margin-bottom: 0rem;
+}
+#back:hover{
+  background-color: #192139;
+}
+
+#next{
+  border-radius: 10px;
+    border: 2px solid #1e2127;
+    padding: 16px 15px 9px 12px; 
+    width: 120px; 
+    float: right;
+    background-color: #272f49;
+    
+}
+#next a i{
+  color: #F4F6F2;
+}
+
+#next p{
+  float: right;
+  margin-bottom: 0rem;
+  margin-right: 33px;
+}
+
+#next:hover{
+  background-color: #344d89;
+}
+#backNext{
+  margin-bottom: 30px;
+}
+
+
+#createtaskbutton{
+  border-radius: 10px;
+  float: right;
+    
+}
+#createtaskbutton i{
+  color: #d9e0f1;
+}
+
+#createtaskbutton p{
+  float: right;
+  margin-bottom: 0rem;
+  margin-right: 15px;
+  color: #d9e0f1;
+  font-weight: 700;
+}
+#createtaskbutton p:hover{
+  color: #007bff;
+}
+
+#createtaskbutton:hover{
+  
+}
+
+
+
+
+/** Styling the "choose avatar" section starts **/
+
+.uploadFile{
+    
+}
+.uploadFile img{
+    width: 70px;
+    height: auto;  
+}
+.uploadFile img:hover{
+    border: 3px solid #1448FF;
+    border-radius: 100px;
+    padding: 10px; 
+} 
+
+.uploadFile p{
+    font-size: 16px;
+    color: #F4F6FB;
+    font-weight: 600;
+    margin-bottom: 10px;  
+}
+
+  
+ .custom-radio{
+    
+ }
+ .custom-radio img{ /** Custome radio styling **/
+    width: 70px;
+    height: auto; 
+ }
+ .custom-radio img:hover{
+    border: 3px solid #1448FF;
+    border-radius: 100px;
+    padding: 10px;
+ }
+ .custom-radio:checked{
+   border: 3px solid #1448FF;
+    border-radius: 100px;
+    padding: 10px;
+ }
+
+ /*input[type="radio"]:checked .custom-radio{
+    border: 2px solid #007bff;
+    border: 3px solid #007bff;
+    border-radius: 15px;
+    padding: 30px;
+  }*/
+
+
+ #uploadPush{
+    margin-top: 32px;;
+ }
+
+/** Styling the "choose avatar" section ends **/
+
+
+#centerButtonCreateChild{
+    margin-bottom: 100px;
+
+}
+.formButtom{
+  margin-bottom: 60px;
+}
+
+#childCreated{
+    background-color: #04070F;
+    width: 200px;
+    padding-left: 47px;
+    padding: 20px 47px 10px 47px;
+    border-radius: 10px;
+}
+
+#childCreated:hover{
+    border: 3px solid #1448FF;
+}
+
+
+#childCreated img{
+    width: 105px;
+}
+#childCreatedName{
+    margin-top: 10px;
+    
+}
+#childCreatedName p{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#emptyProgressBar{
+    background-color: #314973;
+    border-radius:50px;
+    height: 34px;
+   
+}
+#emptyProgressBar p{
+    text-align: center;
+    font-weight: 700;
+    
+}
+#emptyProgressBar img{
+    width: 36px;
+    height: auto;   
+    float: right; 
+}
+
+.radio-group {
+    display: flex; /* Arrange options horizontally */
+    gap: 20px; /* Adjust spacing as needed */
+  }
+  
+  input[type="radio"] {
+    opacity: 0; /* Hide original radio buttons */
+  }
+  
+  label {
+    display: flex; /* Align image and text vertically */
+    align-items: center;
+    cursor: pointer; /* Indicate interactivity */
+  }
+  
+  label img {
+    /* margin-right: 10px; Adjust spacing as needed */
+  }
+  
+  /* Style for selected option (adjust as desired) */
+  input[type="radio"]:checked + label{
+    border: 2px solid #007bff;
+    border: 3px solid #007bff;
+    border-radius: 15px;
+    padding: 15px;
+  }
+
+ #taskCategory{
+    background-color: #04070F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 19px;
+    border-radius: 10px;
+    border: 4px solid #141F37;
+ } 
+ #taskCategory img{
+    width: 80px;
+    margin-bottom: 18px;
+ }
+ #taskCategory img p{
+    margin: 0 auto;
+ }
+ #taskCategory p{
+    text-align: center;
+    margin-bottom: 0;
+ }
+
+ #addTaskHeaderIcon{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #4E607C;
+    border-radius: 100px;
+    float: right;
+ }
+ #addTaskHeaderIcon i{
+    color: #F70A8D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 11px;
+ }                                   
+
+#addTask{
+
+}
+#addTask p{
+    /*padding-top: 14px;*/
+    font-size: 16px;
+    color: #F4F6FB;
+    font-weight: 600;
+}
+
+#addTaskForm{
+    background-color: #04070F;
+    padding: 30px 50px;
+    border-radius: 5px;
+}
+
+
+/* Embedding google icons class */
+.material-icons.md-36 { 
+    font-size: 36px; 
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    /*font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
+  .radio-wrapper {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .radio-image {
+    width: 70px; /* Adjust width as needed */
+    height: 70px; /* Adjust height as needed */
+  }
+
+  label {
+    text-align: center;
+  }
+
+  .radio-image label img{
+    margin-right: 0px;
+  }
+  
+  .check-mark {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+  
+  /* Hide the actual radio button */
+  input[type="radio"] {
+    display: none;
+  }
+  
+  /* Show the checkmark when selected */
+  input[type="radio"]:checked + .check-mark {
+    display: block;
+    background-color: #007bff;
+  }
+
+  .buttonMarginTopBottom{
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+
+#fileuploadmargin{
+    margin-bottom: 10px;
+}
+#fileuploadmargin img{
+    margin-left: 20px;
+}
+#fileuploadmargin label{
+  margin: 0px;
+}
+
+/* Search dropdown */ 
+
+#tasksList {
+  
+}
+
+#tasksList {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-size: cover;
+}
+
+#houseChores{
+  
+}
+
+/* Customize the label (the container) */
+.containerCheckbox {
+  
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 10px;
+  border: 2px solid #505A6E;
+  background: #0a0e16;
+  color: #F4F6F2;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* Hide the browser's default checkbox */
+.containerCheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.containerCheckbox label{
+  margin-left: 18px;
+  
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 22px;
+  left: 18px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+/* On mouse-over, add a grey background color */
+.containerCheckbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerCheckbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerCheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerCheckbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.tag{
+ background-color: #1F283A;
+ padding-top: 10px;
+ padding-left: 32px;
+ border-radius: 50px;
+}
+.tag p{
+  float: left;
+  margin-right: 5px;
+  margin-bottom:0px;
+  
+}
+.tag img{
+}
+
+#marginTop{
+  margin-top: 50px;;
+}
+#marginTop2{
+  margin-Top:100px;
+}
+
+#marginBottom{
+  margin-bottom: 100px;
+}
+#marginBottom70{
+  margin-bottom: 70px; 
+}
+#marginBottom50{
+  margin-bottom: 50px; 
+}
+#marginBottom30{
+  margin-bottom: 30px; 
+}
+
+#pStyle{
+  
+}
+#pStyle p{
+  padding-top: 14px;
+  font-size: 16px;
+  color: #F4F6FB;
+  font-weight: 600;
+
+}
+
+#taskcreatedlist{
+
+}
+
+#taskcreatedlist p{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#editButton{
+  border-radius: 10px;
+  padding: 16px;
+  width: 138px;
+
+  /* To align content horizpntally in a div*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* To give space between*/
+  justify-content: space-between;
+}
+#editButton:hover{
+  background-color: #314973;
+}
+
+#editButton i{
+  color: #d9e0f1;
+}
+#editButton a{
+  color: #d9e0f1;
+  font-weight: 600;
+}
+
+#rewarddiv{
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.rewards{
+margin-bottom: 100px;
+}
+
+.rewardPanel{
+  background-color: #04070F;
+  border-radius: 10px;
+  padding: 35px;
+
+}
+
+#rewardChildHeader{
+  margin-bottom: 41px;
+}
+
+#rewardChildHeader img{
+  float: left;
+  width: 55px;
+  margin-right: 15px;
+}
+
+#rewardChildHeader p{
+  font-size: 16px;
+  font-weight: 600;
+  
+}
+#rewardimg{
+
+}
+#rewardP{
+    width: 116px;
+    padding-top: 18px;
+}
+
+.rewardGift{
+  background-color: #131926;
+  /*width: 230px;
+  float: left;*/
+  padding: 20px;
+  border-radius: 10px; 
+}
+
+
+#rewardTaskCategoryIcon{
+  float: left;
+  margin-right: 15px;
+
+}
+#rewardTaskCategoryText{
+  
+
+}
+#rewardTaskCategoryText p{
+  font-weight: 600;
+  font-size: 13px;
+  color: #ADB8CC;
+
+}
+
+#rewardTaskCategoryName{
+
+}
+
+#legoToy{
+margin-top: 30px;
+}
+
+#legoToyImage{
+  float: left;
+}
+
+#legoToyImage p{
+  padding: 7px;
+  border: 2px solid #505A6E;
+  border-radius: 5px;
+}
+
+#legoToyImage img{
+  width: 58px;
+}
+#LegoToyText{
+
+}
+#LegoToyText p{
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+
+}
+
+#taskPg{
+
+}
+#taskPg p{
+  color: #ABBEFF;
+  font-weight: 700;
+}
+#taskPg p:hover{
+  color: #04070F;
+  background-color: #c0cfff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.rewardGift2{
+  background-color: #131926;
+  /*float: right;*/
+  /*width: 240px;*/
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 3px;
+}
+
+#rewardTaskCategoryIcon2{
+  float: left;
+  margin-right: 15px;
+
+}
+#rewardTaskCategoryName2{
+
+}
+
+.status{
+  margin-top: 20px;
+}
+.status img{
+  width: 25px;
+  float: right;
+}
+
+#jackson{
+
+}
+#jackson img{
+  width: 70px;
+}
+
+
+
+  /*Sizing the icons*/
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; } 
+
+/* Rules for using icons as black on a light background. 
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); } */
+
+/* Rules for using icons as white on a dark background. 
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); } */
+
+
+
+  
+  
+
+  
